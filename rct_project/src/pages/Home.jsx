@@ -1,3 +1,4 @@
+import Middle from "../components/Middle"
 import Navbar from "../components/Navbar"
 
 
@@ -7,9 +8,9 @@ return(
 <>
 
 
-{/* navbar */}
-<Navbar />
 
+<Navbar />
+<Middle/>
 {/* middle */}
 
 
