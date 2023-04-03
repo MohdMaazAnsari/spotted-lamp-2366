@@ -11,8 +11,10 @@ return(
     {/* "cart" */}
     <Navbar/>
     <div>total price:${}</div>
+    <SimpleGrid  gap='10px' columns={4} className="main_container" margin="20px">
 
-    {
+
+{
         array?.map((el)=>{
 
                     return <Box mt="25px"  key={el.id} boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;" borderRadius={"sm"} alt="Clothes" objectFit={"cover"} _hover={{ transform: "scale(0.9)", }} transition={"0.1s ease-in-out"} >
@@ -34,6 +36,8 @@ return(
 
         })
     }
+
+</SimpleGrid>
     
     </>
 )
